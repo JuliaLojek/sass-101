@@ -6,6 +6,9 @@
     position: absolute;
     width: 100%;
     top: 50px;
+    @include mq(600px) {
+      top: 20px;
+    }
   }
   img {
     width: 100%;
@@ -15,6 +18,12 @@
     display: block;
     text-transform: uppercase;
     font-weight: bold;
+    @include mq(3000px, 1200px) {
+      font-size: 56px;
+    }
+    @include mq(600px) {
+      font-size: 4vw;
+    }
   }
   span.title {
     font-weight: normal;
@@ -27,4 +36,17 @@
   grid-template-columns: repeat($columns, 1fr);
   justify-items: center;
   grid-gap: $margin;
+}
+
+@mixin mq($args...) {
+  @if length($args) == 1 {
+    @media screen and (max-width: nth($args, 1)) {
+      @content;
+    }
+  }
+  @if length($args) == 2 {
+    @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)) {
+      @content;
+    }
+  }
 }
