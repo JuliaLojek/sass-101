@@ -79,3 +79,12 @@ section h1 {
 
 // projects section
 
+#projects {
+  margin-bottom: 60px;
+  ul {
+    @include grid(4, 6px);
+  }
+  img {
+    width: 100%;
+  }
+}

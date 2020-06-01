@@ -132,4 +132,17 @@ section h1 {
   color: #a81f48;
 }
 
+#projects {
+  margin-bottom: 60px;
+}
+#projects ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-gap: 6px;
+}
+#projects img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */

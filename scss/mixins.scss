@@ -21,3 +21,10 @@
     margin-bottom: 30px;
   }
 }
+
+@mixin grid($columns, $margin) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  justify-items: center;
+  grid-gap: $margin;
+}
