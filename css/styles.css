@@ -108,4 +108,28 @@ section h1 {
   margin: 60px 0;
 }
 
+#services ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#services li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#services img {
+  width: 60%;
+  margin: 20px 20%;
+}
+#services a {
+  text-decoration: none;
+  color: #032f3e;
+  font-weight: bold;
+}
+#services a:hover {
+  color: #a81f48;
+}
+
 /*# sourceMappingURL=styles.css.map */
