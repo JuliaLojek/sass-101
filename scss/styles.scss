@@ -6,15 +6,19 @@
   background: $deepBlue;
   ul {
     width: 100%;
+    height: 60px;
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
+    align-items: center;
   }
   a {
     color: $offWhite;
     text-decoration: none;
-    padding: 16px;
     display: block;
     text-align: center;
+    &:hover {
+      border-bottom: 2px solid;
+    }
   }
 } // end main-nav
 

@@ -33,15 +33,19 @@ li {
 }
 #main-nav ul {
   width: 100%;
+  height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #main-nav a {
   color: #f8f9fb;
   text-decoration: none;
-  padding: 16px;
   display: block;
   text-align: center;
+}
+#main-nav a:hover {
+  border-bottom: 2px solid;
 }
 
 section h1 {
