@@ -35,7 +35,7 @@ li {
   width: 100%;
   height: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 #main-nav a {
@@ -43,9 +43,12 @@ li {
   text-decoration: none;
   display: block;
   text-align: center;
+  padding: 20px 4vw;
+  justify-self: stretch;
 }
 #main-nav a:hover {
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #19bcf4;
+  color: #19bcf4;
 }
 
 section h1 {
@@ -129,7 +132,8 @@ section h1 {
   font-weight: bold;
 }
 #services a:hover {
-  color: #a81f48;
+  color: #f89573;
+  text-decoration: underline;
 }
 
 #projects {
